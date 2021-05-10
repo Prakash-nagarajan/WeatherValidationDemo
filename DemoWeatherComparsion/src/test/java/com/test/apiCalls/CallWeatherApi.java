@@ -16,12 +16,10 @@ public class CallWeatherApi {
     	try {
 			JSONObject json = new JSONObject(call(city));
 			System.out.println("Temp from API..... "+((JSONObject) json.get("main")).get("temp").toString());
-//			return ((JSONObject) json.get("main")).get("temp").;
 			temperature = ((JSONObject) json.get("main")).get("temp").toString();
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
-    	System.out.println("temperature______"+temperature);
     	return temperature;
     	
             }

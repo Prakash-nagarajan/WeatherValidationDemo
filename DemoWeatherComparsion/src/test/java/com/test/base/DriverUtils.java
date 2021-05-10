@@ -55,9 +55,7 @@ public class DriverUtils extends Driver {
 		return CallWeatherApi.getWeatherFromApi(city);
 	}
 	protected void assertUiVsApiWeather(String city, By ele){
-		System.out.println(getWeatherFromUi(ele));
-//		System.out.println(Integer.parseInt(getWeatherFromApiCall(city)));
-		Assert.assertEquals(getWeatherFromUi(ele), (int)Double.parseDouble(getWeatherFromApiCall(city)));		
+		Assert.assertEquals(getWeatherFromUi(ele), (int)Double.parseDouble(getWeatherFromApiCall(city)));	//We are ignoring the decimal point	
 	}
 	
 }
