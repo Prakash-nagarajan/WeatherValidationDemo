@@ -1,17 +1,17 @@
 package com.test.base;
 
-import com.test.pages.HomePage;
+import com.test.pages.WeatherPage;
 
 public class PageFactory {
 	
-	protected static HomePage hmePageObj;
+	protected static WeatherPage weatherPageObj;
 	
 	public static void init(){
-		hmePageObj = new HomePage();
+		weatherPageObj = new WeatherPage();
 	}
 	
-	public static HomePage getPageObjects(){
-		return hmePageObj;
+	public static WeatherPage getPageObjects(){
+		return weatherPageObj;
 	}
 
 }

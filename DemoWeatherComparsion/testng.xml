@@ -9,7 +9,7 @@
       <class name="com.test.base.DriverUtils"/>
       <class name="com.test.base.PageFactory"/>
       <class name="Interview.DemoWeatherComparsion.App"/>
-      <class name="com.test.pages.HomePage"/>
+      <class name="com.test.pages.WeatherPage"/>
       <class name="com.test.apiCalls.CallWeatherApi"/>
     </classes>
   </test> <!-- Default test -->

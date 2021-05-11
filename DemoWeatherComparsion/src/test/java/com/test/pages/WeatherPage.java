@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 
 import com.test.base.DriverUtils;
 
-public class HomePage extends DriverUtils {
+public class WeatherPage extends DriverUtils {
 
 	private static By notNow = By.xpath("//a[text()='No Thanks']");
 	private static By extendTopMenu = By.xpath("//div/a[@class='topnavmore']");
